@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver oaks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Quintessential&family=Roboto:wght@300;400;500&family=Trocchi&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/fontawsom-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="Schedule-main Download-main">
+        <div id="form-div">
+            <i class="close-menu fa-solid fa-x" onclick="showDownloadForm()"></i>
+            <form class="form" id="form1" method="POST" action="form.php">
+                <h3 style="text-align: center;">Get in touch</h3>
+
+                <p class="name">
+                    <input name="name" type="text"
+                        class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name"
+                        required id="name" />
+                </p>
+
+                <p class="email">
+                    <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="email"
+                        placeholder="Email" required />
+                </p>
+
+                <p class="text">
+                    <input name="text" type="text" class="validate[required,custom[number]] feedback-input" id="number"
+                        placeholder="Phone Number" required />
+                </p>
+
+                <p class="text">
+                    <label for="dateInput" id="date">Schedule site visit</label>
+                    <input type="date" id="dateInput" name="date" required />
+                </p>
+
+                <div class="submit">
+                    <button class="tn-upper btn" type="submit">Download Brochure</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <div class="whatapp">
+        <a href="https://api.whatsapp.com/send?phone=347578247">
+            <img src="./img/icon.png" alt=""></a>
+    </div>
+    <!-- header start -->
+    <div class="barside">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="./project/project.html">Project</a></li>
+            <!-- <li><a href="gallery.html">Gallery</a></li> -->
+            <li><a href="./project/contact.html">Contact</a></li>
+        </ul>
+
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="bar">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+                <a href="index.html">
+                    <img src="./img/SilverOakslogo.png" alt="">
+                </a>
+
+            </div>
+
+
+            <div class="nav">
+
+
+
+                <div class="nav2">
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="./project/project.html">Project</a></li>
+                        <!-- <li><a href="gallery.html">Gallery</a></li> -->
+                        <li><a href="./project/contact.html">Contact</a></li>
+
+
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+            </div>
+            <!-- <div class="nav-button cloud-button">
+                <button>
+                    <a href="contact.html">Cloud</a>
+                </button>
+            </div> -->
+            <div class="nav-button" onclick="showDownloadForm()">
+
+                <a href="">Enquire</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- slider start -->
+
+    <div class="row slider">
+        <div class="box1 position-relative">
+            <img src="img2/Web-banners1.png" class="laptop-show img-fluid" alt="">
+            <img src="img2/Web-banners1.png" class="phone-show img-fluid" alt="">
+
+            <div class="slide-text">
+                <h1>UNLOCK YOUR<br> TRUE WEALTH.</h1>
+                <h2>Welcome to Silver Oaks</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis placeat fugiat rerum
+                    laboriosam omnis.</p>
+                <button class="join">Join Meeting with Silver Oaks</button>
+            </div>
+        </div>
+
+        <div class="box1 position-relative">
+            <img src="img2/Web-banners2.png" class="laptop-show img-fluid" alt="">
+            <img src="img2/Web-banners2.png" class="phone-show img-fluid" alt="">
+
+            <div class="slide-text">
+                <h1>LET YOUR FAMILY'S<br> DREAM BIG.</h1>
+                <h2>Welcome to Silver Oaks</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis placeat fugiat rerum
+                    laboriosam omnis.</p>
+                <button class="join">Join Meeting with Silver Oaks</button>
+            </div>
+        </div>
+
+        <div class="box1 position-relative">
+            <img src="img2/Web-banners3.png" class="laptop-show img-fluid" alt="">
+            <img src="img2/Web-banners3.png" class="phone-show img-fluid" alt="">
+
+            <div class="slide-text">
+                <h1>YOUR FAMILY'S FUTURE<br> STARTS WITH YOUR <br>DECISION.</h1>
+                <h2>Welcome to Silver Oaks</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis placeat fugiat rerum
+                    laboriosam omnis.</p>
+                <button class="join">Join Meeting with Silver Oaks</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .box1 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-text {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            color: white;
+            z-index: 2;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.4);
+            /* optional semi-transparent bg */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .slide-text h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .slide-text h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .slide-text p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .join {
+            background-color: #ffffff;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .join:hover {
+            background-color: #ddd;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 768px) {
+            .slide-text {
+                left: 5%;
+                right: 5%;
+                top: auto;
+                bottom: 10%;
+                transform: none;
+                text-align: center;
+            }
+
+            .slide-text h1 {
+                font-size: 1.8rem;
+            }
+
+            .slide-text h2 {
+                font-size: 1.4rem;
+            }
+
+            .slide-text p {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+    <!-- slider end -->
+
+
+    <!-- header end -->
+
+
+
+    <!-- about section  start-->
+
+    <div class="n-about">
+        <div class="n-about-box1">
+            <div class="n-about-img">
+                <img src="./img/section2.png" alt="">
+            </div>
+            <div class="n-about-text">
+                <h1>Building a Legacy Across Generations</h1>
+                <p>At Silver Oaks, we believe that finding your dream property is more than just a transaction—it's
+                    about being "At The Right Place" at the right time, every time. Our deep expertise in the real
+                    estate market, combined with an unwavering passion for excellence, ensures that your journey with us
+                    is seamless and rewarding. We are dedicated to guiding you through every step, making the complex
+                    process of property ownership simple and stress-free. With Silver Oaks, you're not just buying a
+                    property; you're making a choice that aligns with your vision for the future. Discover the
+                    difference of working with a team that truly understands your needs and is committed to turning your
+                    dreams into reality.</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="about">
+
+        <div class="about-box1">
+            <div class="about-text">
+                <h1>Building a Legacy Across Generations</h1>
+                <p>At Silver Oaks, we believe that finding your dream property is more than just a transaction—it's about being "At The Right Place" at the right time, every time. Our deep expertise in the real estate market, combined with an unwavering passion for excellence, ensures that your journey with us is seamless and rewarding. We are dedicated to guiding you through every step, making the complex process of property ownership simple and stress-free. With Silver Oaks, you're not just buying a property; you're making a choice that aligns with your vision for the future. Discover the difference of working with a team that truly understands your needs and is committed to turning your dreams into reality.</p>
+
+            </div>
+        </div>
+    </div> -->
+
+    <!-- about section end -->
+
+
+    <!-- our value start-->
+
+    <div class="box5">
+        <div class="color">
+
+
+            <div class="box5-child">
+                <p>
+                    Our Values</p>
+                <span></span>
+                <div class="reasons">
+                    <div class="reasons-child">
+                        <p>Client-Centric Approach </p>
+                        <span> We prioritize our clients' needs, ensuring they always feel confident and well-guided in
+                            their real estate journey. Every decision we make is centered around delivering value and
+                            satisfaction to our clients.</span>
+                    </div>
+                    <div class="reasons-child">
+                        <p>Integrity and Transparency</p>
+                        <span>Honesty and clarity are the cornerstones of our business. We believe in open communication
+                            and ethical practices, ensuring our clients trust us completely with their real estate
+                            decisions</span>
+                    </div>
+                    <div class="reasons-child">
+                        <p>Excellence in Service</p>
+                        <span>We are committed to exceeding expectations by delivering superior service. Our passion for
+                            excellence drives us to go the extra mile in every interaction, ensuring a seamless and
+                            rewarding experience for our clients.</span>
+                    </div>
+                    <div class="reasons-child">
+                        <p>Innovation and Growth</p>
+                        <span> We embrace emerging technologies and innovative strategies to stay ahead in the real
+                            estate market. Our forward-thinking approach ensures that we provide the best solutions and
+                            opportunities for our clients.</span>
+                    </div>
+                    <div class="reasons-child">
+                        <p>Community and Relationships</p>
+                        <span>Building strong relationships is at the heart of what we do. We value the communities we
+                            serve and strive to make a positive impact through our projects and actions.</span>
+                    </div>
+                    <div class="reasons-child">
+                        <p>Commitment to Quality</p>
+                        <span>Quality is non-negotiable at Silver Oaks. From the properties we offer to the service we
+                            provide, we are dedicated to maintaining the highest standards of quality in everything we
+                            do.</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- our value end -->
+
+
+
+
+
+
+
+    <!-- why choose us start -->
+
+
+
+
+    <!-- box5 -->
+
+    <div class="box6">
+        <div class="box3">
+            <h2>
+                <span class="box3-span1">Why Choose Us</span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="box6-child-new">
+            <div class="box6-1-child">
+                <div class="box6-child1-new-box ">
+                    <img src="./img/CommitmenttoQualit.png" alt="">
+                </div>
+
+
+                <h3>Commitment to Quality</h3>
+                <p>We focus on delivering high-quality properties that promise long-term value and significant
+                    appreciation.</p>
+            </div>
+            <div class="box6-1-child">
+                <div class="box6-child1-new-box ">
+                    <img src="./img/Client-Centric Approach.png" alt="">
+                </div>
+
+
+                <h3>Client-Centric Approach</h3>
+                <p>Our services are tailored to meet your unique investment goals, ensuring a personalized and
+                    satisfying experience.</p>
+            </div>
+            <div class="box6-1-child">
+
+                <div class="box6-child1-new-box ">
+                    <img src="./img/Client-Centric Approach.png" alt="">
+                </div>
+
+                <h3>Transparency and Trust</h3>
+                <p>We operate with integrity and clear communication, providing you with the confidence and trust needed
+                    for smart investment decisions.</p>
+            </div>
+            <div class="box6-1-child">
+
+                <div class="box6-child1-new-box ">
+                    <img src="./img/location.png" alt="">
+                </div>
+
+                <h3>Strategic Locations</h3>
+                <p>Our projects are carefully selected in prime locations, offering great potential for growth and
+                    convenience.</p>
+            </div>
+
+
+            <!-- 
+        <div class="box6-1-child"></div>
+            
+            <div class="box6-child1-bigtext ">
+                <h2>01</h2>
+            </div>
+            <h3>Commitment to Quality</h3>
+            <p>We focus on delivering high-quality properties that promise long-term value and significant appreciation.</p>
+
+        </div>
+        <div class="box6-child1">
+            <div class="box6-child1-bigtext">
+                <h2>02</h2>
+            </div>
+            <h3>	Client-Centric Approach</h3>
+            <p>Our services are tailored to meet your unique investment goals, ensuring a personalized and satisfying experience.</p>
+
+        </div>
+        <div class="box6-child1">
+            <div class="box6-child1-bigtext">
+                <h2>03</h2>
+            </div>
+            <h3>Transparency and Trust</h3>
+            <p>We operate with integrity and clear communication, providing you with the confidence and trust needed for smart investment decisions.</p>
+
+        </div>
+        <div class="box6-child1">
+            <div class="box6-child1-bigtext">
+                <h2>04</h2>
+            </div>
+            <h3>	Strategic Locations</h3>
+            <p>Our projects are carefully selected in prime locations, offering great potential for growth and convenience.</p>
+
+        </div>  -->
+        </div>
+
+
+
+    </div>
+
+
+    <!-- <section class="bg-se-01">
+        <div class="why-choose-us">
+
+            <p>Why Choose Us</p>
+
+            <div class="why-choose-us-box">
+                <div class="why-choose-us-box-child">
+                    <img src="./img/why.png" alt="">
+                </div>
+                <div class="why-choose-us-box-child">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="main-card">
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <h3>1.	Proven Expertise </h3>
+                                        <p>Proven Expertise: With extensive experience in the real estate industry, Silver Oaks Group offers in-depth market knowledge and a track record of successful projects.</p>
+                                    </li>
+                                    <li>
+                                        <h3>2.	Commitment to Quality</h3>
+                                        <p>We focus on delivering high-quality properties that promise long-term value and significant appreciation.</p>
+                                    </li>
+                                    <li>
+                                        <h3>3.	Client-Centric Approach</h3>
+                                        <p>Our services are tailored to meet your unique investment goals, ensuring a personalized and satisfying experience.</p>
+                                    </li>
+                                    <li>
+                                        <h3>4.	Transparency and Trust</h3>
+                                        <p>We operate with integrity and clear communication, providing you with the confidence and trust needed for smart investment decisions.</p>
+                                    </li>
+                                    <li>
+                                        <h3>5.	Strategic Locations</h3>
+                                        <p>Our projects are carefully selected in prime locations, offering great potential for growth and convenience.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section> -->
+
+    <!-- location start -->
+
+
+    <!-- location end -->
+
+    <!-- footer start -->
+
+    <footer>
+        <div class="color2">
+            <div class="footer">
+                <div class="footer-child">
+                    <img src="./img/logo-img.png" alt="">
+                </div>
+                <div class="footer-child">
+                    <p>
+                        Sliver oaks</p>
+                    <span>
+                        To be the trusted partner in real estate, where every client feels they are "At The Right
+                        Place"—guiding them to discover and secure their ideal property while delivering an unparalleled
+                        experience marked by integrity, excellence, and commitment.
+                    </span>
+                </div>
+
+                <div class="footer-child">
+                    <p>Contact Info</p>
+                    <span>Plot No: 14 A, 2nd & 3rd floor, Sri Janani Arcade, NCL Enclave, PetBasheerabad, Kompally,
+                        Hyderabad. 500067.</span>
+                    <p class="footer-icon">
+                        <a href="https://www.facebook.com/profile.php?id=61577868651111" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@aranyafarmshyd" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/aranyafarmshyd/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </p>
+
+                </div>
+                <div class="footer-child">
+                    <p>Quick Links</p>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="./project/project.html">Project</a></li>
+
+                        <li><a href="./project/contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- footer end -->
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+
+        for (var i = 0; i < 101; i++) {
+            print(i);
+        }
+
+        function print(i) {
+            setTimeout(() => {
+
+                h.innerHTML = `Loading... ${i}`
+                console.log(i);
+            }, 20 * i)
+        }
+
+        $('.row').slick({
+            autoplay: true,
+            arrows: true,
+            dots: false,
+            infinite: true,
+            speed: 2000,
+            autoplaySpeed: 2000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+            prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        autoplaySpeed: 1000,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+        $(document).ready(function () {
+            $('.bar').click(function () {
+                $('.barside').toggleClass('barside1')
+            })
+        });
+
+        //         $(document).ready(function(){
+        //     $(window).on('load',function(){
+        //     $('.loder').delay(1000).fadeOut('slow');
+        //     })
+        //     $('.top,.bottom').addClass('maen');
+        // });
+
+        let h = document.getElementsByClassName('h4')[0]
+
+        let a = 100;
+
+
+
+
+        var body = document.getElementsByTagName('body')[0]
+        var loder = document.getElementsByClassName[0]
+        var con = body
+        window.onload = function () {
+            body
+            loder.addClass('none1')
+        }
+        console.log(body);
+
+    </script>
+    <script>
+
+        function showDownloadForm() {
+            let Form = document.getElementsByClassName('Schedule-main')[0];
+            console.log(Form);
+
+            Form.classList.toggle('showScheduleForm');
+        }
+        function showDownloadthanks() {
+            window.location.href = "./thankyouBrochure.html";
+        }
+    </script>
+
+    <script>
+        // Show the popup form on page load
+        window.addEventListener('load', function () {
+            let formPopup = document.getElementsByClassName('Schedule-main')[0];
+            formPopup.classList.add('showScheduleForm');
+        });
+
+        // Toggle show/hide form manually (used by X button and Enquire button)
+        function showDownloadForm() {
+            let Form = document.getElementsByClassName('Schedule-main')[0];
+            Form.classList.remove('showScheduleForm');
+        }
+
+        // On submit, go to thank you page
+        function showDownloadthanks() {
+            window.location.href = "./thankyouBrochure.html";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
