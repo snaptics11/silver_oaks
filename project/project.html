@@ -53,48 +53,52 @@
 
 <body>
     <div class="new-btn2 btn-Download">
-        <button  class="btn-upper btn-yellow btn" onclick="showDownloadForm()">
-          <a href="#">Schedule Site Visit</a>
-          </button>
-        </div>
-    <div  class="Schedule-main Download-main">
+        <button class="btn-upper btn-yellow btn" onclick="showDownloadForm()">
+            <a href="#">Schedule Site Visit</a>
+        </button>
+    </div>
+    <div class="Schedule-main Download-main">
         <div id="form-div">
-          <i class="close-menu fa-solid fa-x" onclick="showDownloadForm()"></i>
-          <form class="form" id="form1" >
-            <h3 style="text-align: center;">Get in touch</h3>
-            
-            <p class="name">
-              <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-            </p>
-            
-            <p class="email">
-              <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-            </p>
-            
-            <p class="text">
-              <input name="text" type="text" class="validate[required,custom[number]] feedback-input" id="number" placeholder="Phone Number" />
-            </p>    
-            
-            <p class="text">
-                <label for="dateInput" id="date">Shadule site visit</label>
-                <input type="date" id="dateInput" onfocus="(this.type='date')" onblur="(this.type='date')" >
-              </p>
-            
+            <i class="close-menu fa-solid fa-x" onclick="showDownloadForm()"></i>
+            <form class="form" id="form1">
+                <h3 style="text-align: center;">Get in touch</h3>
 
-            
-            
-            
-            
-            <div class="submit">
-              <button class="tn-upper  btn">
-                <a href="#"  onclick="showDownloadthanks()">Submit</a>
-              </button>
-              <!-- <input type="submit" value="Download" id="button-blue" class="tn-upper btn-yellow btn"/> -->
-              
-            </div>
-          </form>
+                <p class="name">
+                    <input name="name" type="text"
+                        class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name"
+                        id="name" />
+                </p>
+
+                <p class="email">
+                    <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email"
+                        placeholder="Email" />
+                </p>
+
+                <p class="text">
+                    <input name="text" type="text" class="validate[required,custom[number]] feedback-input" id="number"
+                        placeholder="Phone Number" />
+                </p>
+
+                <p class="text">
+                    <label for="dateInput" id="date">Shadule site visit</label>
+                    <input type="date" id="dateInput" onfocus="(this.type='date')" onblur="(this.type='date')">
+                </p>
+
+
+
+
+
+
+                <div class="submit">
+                    <button class="tn-upper  btn">
+                        <a href="#" onclick="showDownloadthanks()">Submit</a>
+                    </button>
+                    <!-- <input type="submit" value="Download" id="button-blue" class="tn-upper btn-yellow btn"/> -->
+
+                </div>
+            </form>
         </div>
-      </div>
+    </div>
 
     <div class="page-wrapper">
         <div class="whatapp">
@@ -155,10 +159,10 @@
                     </button>
                 </div> -->
                 <div class="nav-button" onclick="showDownloadForm()">
-                
+
                     <a href="#">Enquire</a>
-                
-            </div>
+
+                </div>
             </nav>
         </header>
 
@@ -169,33 +173,33 @@
 
         <style>
             .slide-logo {
-  position: absolute;
-  top: 50px;
-  left: 80px;
-  width: 120px; /* Adjust logo size */
-  z-index: 10;
-}
+                position: absolute;
+                top: 50px;
+                left: 80px;
+                width: 120px;
+                /* Adjust logo size */
+                z-index: 10;
+            }
 
-/* Optional: Responsive logo size */
-@media (max-width: 768px) {
-  .slide-logo {
-    width: 90px;
-    top: 15px;
-    left: 15px;
-  }
-}
-
+            /* Optional: Responsive logo size */
+            @media (max-width: 768px) {
+                .slide-logo {
+                    width: 90px;
+                    top: 15px;
+                    left: 15px;
+                }
+            }
         </style>
 
         <section class="main-slider main-slider__two">
-  <div class="main-slider__line-1"></div>
-  <div class="main-slider__line-2"></div>
-  <div class="main-slider__line-3"></div>
-  <div class="main-slider__line-4"></div>
-  <div class="main-slider__line-5"></div>
-  <div class="main-slider__line-6"></div>
+            <div class="main-slider__line-1"></div>
+            <div class="main-slider__line-2"></div>
+            <div class="main-slider__line-3"></div>
+            <div class="main-slider__line-4"></div>
+            <div class="main-slider__line-5"></div>
+            <div class="main-slider__line-6"></div>
 
-  <div class="swiper-container thm-swiper__slider" data-swiper-options='{
+            <div class="swiper-container thm-swiper__slider" data-swiper-options='{
     "slidesPerView": 1,
     "loop": true,
     "effect": "fade",
@@ -207,80 +211,84 @@
         "prevEl": "#main-slider__swiper-button-prev"
     }
   }'>
-    <div class="swiper-wrapper">
-      <!-- Slide 1 -->
-      <div class="swiper-slide position-relative">
-        <div class="image-layer" style="background-image: url(assets/images/main-slider/main-slider-2-1.jpg);"></div>
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide position-relative">
+                        <div class="image-layer"
+                            style="background-image: url(assets/images/main-slider/main-slider-2-1.jpg);"></div>
 
-        <!-- Logo -->
-        <img src="/img2/aranya logo_page-0002.jpg" alt="Logo" class="slide-logo">
+                        <!-- Logo -->
+                        <img src="../img2/aranya logo_page-0002.jpg" alt="Logo" class="slide-logo">
 
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12 text-center">
-              <span class="tagline">Welcome to Aranya</span>
-              <h2>My Farm <br> My World</h2>
-              <a class="new-btn" href="#" onclick="showDownloadForm()">Download Brochure</a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12 text-center">
+                                    <span class="tagline">Welcome to Aranya</span>
+                                    <h2>My Farm <br> My World</h2>
+                                    <a class="new-btn" href="#" onclick="showDownloadForm()">Download Brochure</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide position-relative">
+                        <div class="image-layer"
+                            style="background-image: url(assets/images/main-slider/main-slider-2-2.jpg);"></div>
+
+                        <!-- Logo -->
+                        <img src="../img2/aranya logo_page-0001.jpg" alt="Logo" class="slide-logo">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12 text-center">
+                                    <span class="tagline">Welcome to Aranya</span>
+                                    <h2>Play, Live & Celebrate</h2>
+                                    <a class="new-btn" href="#" onclick="showDownloadForm()">Download Brochure</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="main-slider__nav">
+                    <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i
+                            class="agrikon-icon-left-arrow"></i></div>
+                    <div class="swiper-button-next" id="main-slider__swiper-button-prev"><i
+                            class="agrikon-icon-right-arrow"></i></div>
+                </div>
             </div>
-          </div>
+        </section>
+
+        <div class="video-container">
+            <video autoplay loop muted playsinline class="custom-video">
+                <source src="../img2/aranya_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="swiper-slide position-relative">
-        <div class="image-layer" style="background-image: url(assets/images/main-slider/main-slider-2-2.jpg);"></div>
-
-        <!-- Logo -->
-        <img src="/img2/aranya logo_page-0001.jpg" alt="Logo" class="slide-logo">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12 text-center">
-              <span class="tagline">Welcome to Aranya</span>
-              <h2>Play, Live & Celebrate</h2>
-              <a class="new-btn" href="#" onclick="showDownloadForm()">Download Brochure</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Navigation buttons -->
-    <div class="main-slider__nav">
-      <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i class="agrikon-icon-left-arrow"></i></div>
-      <div class="swiper-button-next" id="main-slider__swiper-button-prev"><i class="agrikon-icon-right-arrow"></i></div>
-    </div>
-  </div>
-</section>
-
-<div class="video-container">
-  <video autoplay loop muted playsinline class="custom-video">
-    <source src="/img2/aranya_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
 
 
 
 
 
-<style>
-    .video-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  max-height: 700px; /* Adjust based on your layout */
-}
+        <style>
+            .video-container {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                max-height: 700px;
+                /* Adjust based on your layout */
+            }
 
-.custom-video {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-</style>
+            .custom-video {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                display: block;
+            }
+        </style>
 
 
 
@@ -366,8 +374,9 @@
                                     The perfect retreat.
                                 </li>
                             </ul>
-                            
-                            <button class="btn  new-btn Downloadbrochure">Schedule Site Visit</button><!-- /.list-unstyled -->
+
+                            <button class="btn  new-btn Downloadbrochure">Schedule Site
+                                Visit</button><!-- /.list-unstyled -->
                             <!-- <div class="video-one__count-wrap">
                                 <div class="video-one__count">
                                     <i class="agrikon-icon-investment"></i>
@@ -381,7 +390,7 @@
                             <!-- /.video-one__count-wrap -->
                         </div><!-- /.video-one__content -->
                     </div><!-- /.col-lg-6 -->
-                    
+
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.video-one -->
@@ -519,9 +528,9 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="about-two__images">
-                            <img src="assets/images/Plantation1.jpeg" alt="" class="img-1">         
-                            
-                    
+                            <img src="assets/images/Plantation1.jpeg" alt="" class="img-1">
+
+
                             <img src="assets/images/Plantation2.jpeg" alt="" class="img-2">
                         </div><!-- /.about-two__images -->
                     </div><!-- /.col-lg-6 -->
@@ -689,199 +698,395 @@
 
 
 
-<!-- new section -->
+        <!-- new section -->
 
 
 
-<div class="elementor-section elementor-top-section elementor-element elementor-element-b2c7f45 nt-section section-padding nt-section-ripped-top ripped-top-yes nt-section-ripped-bottom ripped-bottom-yes elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-data-id="b2c7f45" data-element_type="section"
-data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-container elementor-column-gap-no">
-    <div class="elementor-row">
-        
-        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a9b48b4"
-            data-id="a9b48b4" data-element_type="column">
-            <div class="elementor-column-wrap elementor-element-populated">
-                <div class="elementor-widget-wrap">
-                    <div class="elementor-element elementor-element-a552bc2 agrikon-transform transform-type-translate elementor-widget elementor-widget-heading"
-                        data-id="a552bc2" data-element_type="widget" data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
-                            <h3 class="elementor-heading-title elementor-size-default">Project Amenities
-                            </h3>
-                            <span></span>
-                        </div>
-                    </div>
-                   
-                    <div class="elementor-section elementor-inner-section elementor-element elementor-element-2705b40 elementor-section-boxed elementor-section-height-default elementor-section-height-default nt-section-ripped-top ripped-top-no nt-section-ripped-bottom ripped-bottom-no"
-                        data-id="2705b40" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-no">
-                            <div class="elementor-row">
-                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-bdfba43"
-                                    data-id="bdfba43" data-element_type="column">
-                                    <div class="elementor-column-wrap elementor-element-populated">
-                                        <div class="elementor-widget-wrap ">
-                                            <div class="elementor-element elementor-element-c1ca68b elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                                data-id="c1ca68b" data-element_type="widget"
-                                                data-widget_type="icon-list.default">
-                                                <div class="elementor-widget-container">
-                                                    <link rel="stylesheet"
-                                                        href="https://kshethralifespaces.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
-                                                    <ul class="elementor-icon-list-items">
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">10000 Sft
-                                                                Club House</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">30’, 40’
-                                                                Eco Friendly Wide Roads</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">15’ Wide
-                                                                Central Canal</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">Avenue
-                                                                Plantation</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">Childrens
-                                                                Park</span>
-                                                        </li>
+        <div class="elementor-section elementor-top-section elementor-element elementor-element-b2c7f45 nt-section section-padding nt-section-ripped-top ripped-top-yes nt-section-ripped-bottom ripped-bottom-yes elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="b2c7f45" data-element_type="section"
+            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-no">
+                <div class="elementor-row">
+
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a9b48b4"
+                        data-id="a9b48b4" data-element_type="column">
+                        <div class="elementor-column-wrap elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-a552bc2 agrikon-transform transform-type-translate elementor-widget elementor-widget-heading"
+                                    data-id="a552bc2" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h3 class="elementor-heading-title elementor-size-default">Project Amenities
+                                        </h3>
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <div class="elementor-section elementor-inner-section elementor-element elementor-element-2705b40 elementor-section-boxed elementor-section-height-default elementor-section-height-default nt-section-ripped-top ripped-top-no nt-section-ripped-bottom ripped-bottom-no"
+                                    data-id="2705b40" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-no">
+                                        <div class="elementor-row">
+                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-bdfba43"
+                                                data-id="bdfba43" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div class="elementor-widget-wrap ">
+                                                        <div class="elementor-element elementor-element-c1ca68b elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                                            data-id="c1ca68b" data-element_type="widget"
+                                                            data-widget_type="icon-list.default">
+                                                            <div class="elementor-widget-container">
+                                                                <link rel="stylesheet"
+                                                                    href="https://kshethralifespaces.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
+                                                                <ul class="elementor-icon-list-items">
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">10000 Sft
+                                                                            Club House</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">30’, 40’
+                                                                            Eco Friendly Wide Roads</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">15’ Wide
+                                                                            Central Canal</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Avenue
+                                                                            Plantation</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Childrens
+                                                                            Park</span>
+                                                                    </li>
 
 
 
 
 
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">Street
-                                                                Lighting</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">Jogging
-                                                                track</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span
-                                                                class="elementor-icon-list-text">Goshala</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">Camp Fire
-                                                                Zone</span>
-                                                        </li>
-                                                        
-                                                    </ul>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Street
+                                                                            Lighting</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Jogging
+                                                                            track</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span
+                                                                            class="elementor-icon-list-text">Goshala</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Camp Fire
+                                                                            Zone</span>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ce564b6"
+                                                data-id="ce564b6" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div class="elementor-widget-wrap">
+                                                        <div class="elementor-element elementor-element-452e6a9 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                                            data-id="452e6a9" data-element_type="widget"
+                                                            data-widget_type="icon-list.default">
+                                                            <div class="elementor-widget-container">
+                                                                <ul class="elementor-icon-list-items">
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Oxygen
+                                                                            Park</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Work from
+                                                                            Farm Stations</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Kids Play
+                                                                            Area</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span
+                                                                            class="elementor-icon-list-text">Integrated
+                                                                            Landscaping</span>
+                                                                    </li>
+
+
+
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Grand
+                                                                            Entrance Arch</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Party
+                                                                            Lawn</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Compound
+                                                                            Wall</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span
+                                                                            class="elementor-icon-list-text">Gazebo</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span
+                                                                            class="elementor-icon-list-text">Photography
+                                                                            Place</span>
+                                                                    </li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ce564b6"
-                                    data-id="ce564b6" data-element_type="column">
-                                    <div class="elementor-column-wrap elementor-element-populated">
-                                        <div class="elementor-widget-wrap">
-                                            <div class="elementor-element elementor-element-452e6a9 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                                data-id="452e6a9" data-element_type="widget"
-                                                data-widget_type="icon-list.default">
-                                                <div class="elementor-widget-container">
-                                                    <ul class="elementor-icon-list-items">
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">Oxygen
-                                                                Park</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">Work from
-                                                                Farm Stations</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">Kids Play
-                                                                Area</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span
-                                                                class="elementor-icon-list-text">Integrated
-                                                                Landscaping</span>
-                                                        </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a9b48b4"
+                        data-id="a9b48b4" data-element_type="column">
+                        <div class="elementor-column-wrap elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-a552bc2 agrikon-transform transform-type-translate elementor-widget elementor-widget-heading"
+                                    data-id="a552bc2" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container club-house-box">
+                                        <h3 class="elementor-heading-title elementor-size-default club-house">Club House
+                                            Amenities
+                                        </h3>
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <div class="elementor-section elementor-inner-section elementor-element elementor-element-2705b40 elementor-section-boxed elementor-section-height-default elementor-section-height-default nt-section-ripped-top ripped-top-no nt-section-ripped-bottom ripped-bottom-no"
+                                    data-id="2705b40" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-no">
+                                        <div class="elementor-row">
+                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-bdfba43"
+                                                data-id="bdfba43" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div class="elementor-widget-wrap ">
+                                                        <div class="elementor-element elementor-element-c1ca68b elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                                            data-id="c1ca68b" data-element_type="widget"
+                                                            data-widget_type="icon-list.default">
+                                                            <div class="elementor-widget-container">
+                                                                <link rel="stylesheet"
+                                                                    href="https://kshethralifespaces.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
+                                                                <ul class="elementor-icon-list-items">
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">River
+                                                                            Seating Camp</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span
+                                                                            class="elementor-icon-list-text">Reflexology
+                                                                            Path</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Rock
+                                                                            Climbing Zone</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span
+                                                                            class="elementor-icon-list-text">Ecological
+                                                                            Pond</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Cycling
+                                                                            Track</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Drip
+                                                                            Irrigation</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span
+                                                                            class="elementor-icon-list-text">Electricity
+                                                                            with Transformer</span>
+                                                                    </li>
+
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">CCTV
+                                                                            Surveillance</span>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ce564b6"
+                                                data-id="ce564b6" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div class="elementor-widget-wrap">
+                                                        <div class="elementor-element elementor-element-452e6a9 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                                            data-id="452e6a9" data-element_type="widget"
+                                                            data-widget_type="icon-list.default">
+                                                            <div class="elementor-widget-container">
+                                                                <ul class="elementor-icon-list-items">
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Banquet
+                                                                            Hall</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span
+                                                                            class="elementor-icon-list-text">Cottages</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span
+                                                                            class="elementor-icon-list-text">Restaurant</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">World
+                                                                            Class Gym</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Indoor
+                                                                            Games Zone</span>
+                                                                    </li>
 
 
 
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">Grand
-                                                                Entrance Arch</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">Party
-                                                                Lawn</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span class="elementor-icon-list-text">Compound
-                                                                Wall</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span
-                                                                class="elementor-icon-list-text">Gazebo</span>
-                                                        </li>
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-icon">
-                                                                <i aria-hidden="true"
-                                                                    class="fas fa-check-circle"></i> </span>
-                                                            <span
-                                                                class="elementor-icon-list-text">Photography
-                                                                Place</span>
-                                                        </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Ayurvedic
+                                                                            Spa</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span
+                                                                            class="elementor-icon-list-text">Meditation
+                                                                            & Yoga Deck</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Swimming
+                                                                            pool</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Cricket
+                                                                            Net</span>
+                                                                    </li>
+                                                                    <li class="elementor-icon-list-item">
+                                                                        <span class="elementor-icon-list-icon">
+                                                                            <i aria-hidden="true"
+                                                                                class="fas fa-check-circle"></i> </span>
+                                                                        <span class="elementor-icon-list-text">Sand
+                                                                            Volley Ball</span>
+                                                                    </li>
 
-                                                       
-                                                    </ul>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -893,193 +1098,6 @@ data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                 </div>
             </div>
         </div>
-        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a9b48b4"
-        data-id="a9b48b4" data-element_type="column">
-        <div class="elementor-column-wrap elementor-element-populated">
-            <div class="elementor-widget-wrap">
-                <div class="elementor-element elementor-element-a552bc2 agrikon-transform transform-type-translate elementor-widget elementor-widget-heading"
-                    data-id="a552bc2" data-element_type="widget" data-widget_type="heading.default">
-                    <div class="elementor-widget-container club-house-box">
-                        <h3 class="elementor-heading-title elementor-size-default club-house">Club House Amenities
-                        </h3>
-                        <span></span>
-                    </div>
-                </div>
-               
-                <div class="elementor-section elementor-inner-section elementor-element elementor-element-2705b40 elementor-section-boxed elementor-section-height-default elementor-section-height-default nt-section-ripped-top ripped-top-no nt-section-ripped-bottom ripped-bottom-no"
-                    data-id="2705b40" data-element_type="section">
-                    <div class="elementor-container elementor-column-gap-no">
-                        <div class="elementor-row">
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-bdfba43"
-                                data-id="bdfba43" data-element_type="column">
-                                <div class="elementor-column-wrap elementor-element-populated">
-                                    <div class="elementor-widget-wrap ">
-                                        <div class="elementor-element elementor-element-c1ca68b elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                            data-id="c1ca68b" data-element_type="widget"
-                                            data-widget_type="icon-list.default">
-                                            <div class="elementor-widget-container">
-                                                <link rel="stylesheet"
-                                                    href="https://kshethralifespaces.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
-                                                <ul class="elementor-icon-list-items">
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">River
-                                                            Seating Camp</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span
-                                                            class="elementor-icon-list-text">Reflexology
-                                                            Path</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">Rock
-                                                            Climbing Zone</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span
-                                                            class="elementor-icon-list-text">Ecological
-                                                            Pond</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">Cycling
-                                                            Track</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">Drip
-                                                            Irrigation</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span
-                                                            class="elementor-icon-list-text">Electricity
-                                                            with Transformer</span>
-                                                    </li>
-
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">CCTV
-                                                            Surveillance</span>
-                                                    </li>
-                                                   
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ce564b6"
-                                data-id="ce564b6" data-element_type="column">
-                                <div class="elementor-column-wrap elementor-element-populated">
-                                    <div class="elementor-widget-wrap">
-                                        <div class="elementor-element elementor-element-452e6a9 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                            data-id="452e6a9" data-element_type="widget"
-                                            data-widget_type="icon-list.default">
-                                            <div class="elementor-widget-container">
-                                                <ul class="elementor-icon-list-items">
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">Banquet Hall</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">Cottages</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">Restaurant</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">World Class Gym</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span
-                                                            class="elementor-icon-list-text">Indoor Games Zone</span>
-                                                    </li>
-
-
-
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">Ayurvedic Spa</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">Meditation & Yoga Deck</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span class="elementor-icon-list-text">Swimming pool</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span
-                                                            class="elementor-icon-list-text">Cricket Net</span>
-                                                    </li>
-                                                    <li class="elementor-icon-list-item">
-                                                        <span class="elementor-icon-list-icon">
-                                                            <i aria-hidden="true"
-                                                                class="fas fa-check-circle"></i> </span>
-                                                        <span
-                                                            class="elementor-icon-list-text">Sand Volley Ball</span>
-                                                    </li>
-
-                                                    
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
-    </div>
-</div>
-</div>
 
 
 
@@ -1133,7 +1151,7 @@ data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                     <div class="row col-sm-12 align-items-center">
                         <div class="col-lg-6">
                             <div class="blog-home__slogan-main">
-                             
+
                                 <div class="blog-home__slogan-content">
                                     <h3>Spread Over 46 Acres</h3>
                                     <p>5 Guntas – 25 Plants
@@ -1144,10 +1162,10 @@ data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                     </p>
                                 </div><!-- /.blog-home__slogan-content -->
 
-                               
+
                             </div><!-- /.blog-home__slogan-main -->
-                            <button class="btn  new-btn Downloadbrochure"  onclick="showDownloadForm()">
-                                
+                            <button class="btn  new-btn Downloadbrochure" onclick="showDownloadForm()">
+
                                 Schedule Site Visit</button>
                         </div><!-- /.col-lg-9 -->
                         <div class="col-lg-6">
@@ -1161,7 +1179,7 @@ data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
         </section><!-- /.gray-boxed-wrapper -->
 
 
-     
+
 
         <!-- footer start -->
 
@@ -1199,7 +1217,7 @@ data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="../about.html">About</a></li>
                             <li><a href="../project/project.html">Project</a></li>
-                           
+
                             <li><a href="./contact.html">Contact</a></li>
                         </ul>
 
@@ -1241,17 +1259,17 @@ data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
     <script src="assets/js/theme.js"></script>
     <script>
 
-function showDownloadForm(){
-      let Form = document.getElementsByClassName('Schedule-main')[0];
-      console.log(Form);
-      
-      Form.classList.toggle('showScheduleForm');
-    }
-    function showDownloadthanks(){
-      window.location.href = "../thankyouBrochure.html";
-    }
+        function showDownloadForm() {
+            let Form = document.getElementsByClassName('Schedule-main')[0];
+            console.log(Form);
 
-    $(document).ready(function () {
+            Form.classList.toggle('showScheduleForm');
+        }
+        function showDownloadthanks() {
+            window.location.href = "../thankyouBrochure.html";
+        }
+
+        $(document).ready(function () {
             $('.bar').click(function () {
                 $('.barside').toggleClass('barside1')
             })
