@@ -48,8 +48,8 @@
                     <input type="date" id="dateInput" name="date" required />
                 </p>
 
-                <div class="submit">
-                    <button class="tn-upper btn" type="submit">Download Brochure</button>
+                <div class="submit" style="text-align: center;">
+                    <button class="tn-upper btn" type="submit">submit & Download Brochure</button>
                 </div>
             </form>
         </div>
@@ -125,123 +125,119 @@
 
     <!-- slider start -->
 
-    <div class="row slider">
-        <div class="box1 position-relative">
-            <img src="img2/Web-banners1.png" class="laptop-show img-fluid" alt="">
-            <img src="img2/Web-banners1.png" class="phone-show img-fluid" alt="">
+   <div class="row slider">
+    <div class="box1 position-relative">
+        <img src="img2/Web-banners1.png" class="laptop-show img-fluid" alt="">
+        <img src="img2/Web-banners1.png" class="phone-show img-fluid" alt="">
 
-            <div class="slide-text">
-                <h1>UNLOCK YOUR<br> TRUE WEALTH.</h1>
-                <h2>Welcome to Silver Oaks</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis placeat fugiat rerum
-                    laboriosam omnis.</p>
-                <button class="join">Join Meeting with Silver Oaks</button>
-            </div>
-        </div>
-
-        <div class="box1 position-relative">
-            <img src="img2/Web-banners2.png" class="laptop-show img-fluid" alt="">
-            <img src="img2/Web-banners2.png" class="phone-show img-fluid" alt="">
-
-            <div class="slide-text">
-                <h1>LET YOUR FAMILY'S<br> DREAM BIG.</h1>
-                <h2>Welcome to Silver Oaks</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis placeat fugiat rerum
-                    laboriosam omnis.</p>
-                <button class="join">Join Meeting with Silver Oaks</button>
-            </div>
-        </div>
-
-        <div class="box1 position-relative">
-            <img src="img2/Web-banners3.png" class="laptop-show img-fluid" alt="">
-            <img src="img2/Web-banners3.png" class="phone-show img-fluid" alt="">
-
-            <div class="slide-text">
-                <h1>YOUR FAMILY'S FUTURE<br> STARTS WITH YOUR <br>DECISION.</h1>
-                <h2>Welcome to Silver Oaks</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis placeat fugiat rerum
-                    laboriosam omnis.</p>
-                <button class="join">Join Meeting with Silver Oaks</button>
-            </div>
+        <div class="slide-text">
+            <h1>UNLOCK YOUR<br><span class="highlight">TRUE WEALTH.</span></h1>
         </div>
     </div>
 
-    <style>
-        .box1 {
-            position: relative;
-            overflow: hidden;
-        }
+    <div class="box1 position-relative">
+        <img src="img2/Web-banners2.png" class="laptop-show img-fluid" alt="">
+        <img src="img2/Web-banners2.png" class="phone-show img-fluid" alt="">
 
+        <div class="slide-text">
+            <h1>LET YOUR FAMILY'S<br><span class="highlight">DREAM BIG.</span></h1>
+        </div>
+    </div>
+
+    <div class="box1 position-relative">
+        <img src="img2/Web-banners3.png" class="laptop-show img-fluid" alt="">
+        <img src="img2/Web-banners3.png" class="phone-show img-fluid" alt="">
+
+        <div class="slide-text">
+            <h1>YOUR FAMILY'S FUTURE<br>STARTS WITH YOUR<br><span class="highlight">DECISION.</span></h1>
+        </div>
+    </div>
+</div>
+
+<style>
+    .box1 {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide-text {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        color: white;
+        z-index: 2;
+        max-width: 600px;
+        background: rgba(0, 0, 0, 0.2); /* semi-transparent background */
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .slide-text h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+
+    .highlight {
+        background-color: #ffd700; 
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 5px;
+    }
+
+    .slide-text h2 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .slide-text p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .join {
+        background-color: #ffffff;
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .join:hover {
+        background-color: #ddd;
+    }
+
+    /* Responsive Tweaks */
+    @media (max-width: 768px) {
         .slide-text {
-            position: absolute;
-            top: 50%;
-            left: 10%;
-            transform: translateY(-50%);
-            color: white;
-            z-index: 2;
-            max-width: 600px;
-            background: rgba(0, 0, 0, 0.4);
-            /* optional semi-transparent bg */
-            padding: 20px;
-            border-radius: 10px;
+            left: 5%;
+            right: 5%;
+            top: auto;
+            bottom: 10%;
+            transform: none;
+            text-align: center;
         }
 
         .slide-text h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 15px;
+            font-size: 1.8rem;
         }
 
         .slide-text h2 {
-            font-size: 1.75rem;
-            font-weight: 600;
-            margin-bottom: 10px;
+            font-size: 1.4rem;
         }
 
         .slide-text p {
-            font-size: 1rem;
-            margin-bottom: 20px;
+            font-size: 0.95rem;
         }
+    }
+</style>
 
-        .join {
-            background-color: #ffffff;
-            color: #000;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 30px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .join:hover {
-            background-color: #ddd;
-        }
-
-        /* Responsive Tweaks */
-        @media (max-width: 768px) {
-            .slide-text {
-                left: 5%;
-                right: 5%;
-                top: auto;
-                bottom: 10%;
-                transform: none;
-                text-align: center;
-            }
-
-            .slide-text h1 {
-                font-size: 1.8rem;
-            }
-
-            .slide-text h2 {
-                font-size: 1.4rem;
-            }
-
-            .slide-text p {
-                font-size: 0.95rem;
-            }
-        }
-    </style>
     <!-- slider end -->
 
 
