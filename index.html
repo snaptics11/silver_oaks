@@ -25,10 +25,6 @@
 
 <body>
     <style>
-        
-
-        
-
         #form-div {
 
             padding: 30px 40px;
@@ -57,7 +53,7 @@
         }
 
         #form-div label#date {
-          
+
             margin-bottom: 8px;
             font-weight: 600;
         }
@@ -138,9 +134,12 @@
 
 
     <div class="whatapp">
-        <a href="https://api.whatsapp.com/send?phone=347578247">
-            <img src="./img/icon.png" alt=""></a>
+        <a href="https://api.whatsapp.com/send?phone=919100970203" target="_blank" rel="noopener noreferrer">
+            <img src="./img/icon.png" alt="">
+        </a>
     </div>
+
+
     <!-- header start -->
     <div class="barside">
         <ul>
@@ -150,10 +149,9 @@
             <!-- <li><a href="gallery.html">Gallery</a></li> -->
             <li><a href="./project/contact.html">Contact</a></li>
         </ul>
-
     </div>
+
     <header>
-        
         <nav>
             <div class="logo">
                 <div class="bar">
@@ -162,46 +160,56 @@
                 <a href="index.html">
                     <img src="./img/SilverOakslogo.png" alt="">
                 </a>
-
             </div>
 
-
             <div class="nav">
-
-
-
                 <div class="nav2">
-
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="./project/project.html">Project</a></li>
                         <!-- <li><a href="gallery.html">Gallery</a></li> -->
                         <li><a href="./project/contact.html">Contact</a></li>
-
-
                     </ul>
                 </div>
-
-
-
-
-
-
-
             </div>
-            <!-- <div class="nav-button cloud-button">
-                <button>
-                    <a href="contact.html">Cloud</a>
-                </button>
-            </div> -->
-            <div class="nav-button" onclick="showDownloadForm()">
 
-                <a href="">Enquire</a>
+            <!-- Enquire Button + Social Links Wrapper -->
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <!-- Enquire Button -->
+                <div class="nav-button" onclick="showDownloadForm()">
+                    <a href="#">Enquire</a>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="social-icons" style="display: flex; gap: 10px;">
+                    <a href="https://www.facebook.com/profile.php?id=61577868651111" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@aranyafarmshyd" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/aranyafarmshyd/" target="_blank" rel="noopener noreferrer">
+                        <i class=" fa-brands fa-instagram"></i>
+                    </a>
+                </div>
 
             </div>
         </nav>
     </header>
+    <style>
+        .social-icons a {
+            color: black;
+            font-size: 25px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+    </style>
+
 
     <!-- slider start -->
 
