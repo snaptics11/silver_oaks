@@ -181,6 +181,7 @@
                     <a href="#">Enquire</a>
                 </div>
 
+
                 <!-- Social Media Icons -->
                 <div class="social-icons" style="display: flex; gap: 20px;">
                     <a href="https://www.facebook.com/profile.php?id=61577868651111" target="_blank"
@@ -747,7 +748,7 @@
         // Toggle show/hide form manually (used by X button and Enquire button)
         function showDownloadForm() {
             let Form = document.getElementsByClassName('Schedule-main')[0];
-            Form.classList.remove('showScheduleForm');
+            Form.classList.toggle('showScheduleForm');
         }
 
         // On submit, go to thank you page
