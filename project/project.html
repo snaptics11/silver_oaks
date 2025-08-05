@@ -768,6 +768,211 @@
 
 
         <!-- new section -->
+        <!-- updated site works starts here  -->
+        <div>
+            <div class="block-title text-center">
+                <h3>Updated Site Works</h3>
+            </div>
+
+            <div class="image-scroll-wrapper">
+                <!-- Left Arrow -->
+                <button class="scroll-arrow left" onclick="scrollImages('left')">
+                    &#10094;
+                </button>
+
+                <!-- Scrollable Image Container -->
+                <div class="scroll-images" id="scrollContainer">
+                    <img src="../img2/slider_images/img (1).jpg" alt="Image 1" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (2).jpg" alt="Image 2" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (3).jpg" alt="Image 3" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (4).jpg" alt="Image 4" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (5).jpg" alt="Image 5" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (6).jpg" alt="Image 6" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (7).jpg" alt="Image 7" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (8).jpg" alt="Image 8" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (9).jpg" alt="Image 9" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (10).jpg" alt="Image 10" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (11).jpg" alt="Image 11" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (12).jpg" alt="Image 12" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (13).jpg" alt="Image 13" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (14).jpg" alt="Image 14" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (15).jpg" alt="Image 15" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (16).jpg" alt="Image 16" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (17).jpg" alt="Image 17" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (18).jpg" alt="Image 18" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (19).jpg" alt="Image 19" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (20).jpg" alt="Image 20" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (21).jpg" alt="Image 21" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (22).jpg" alt="Image 22" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (23).jpg" alt="Image 23" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (24).jpg" alt="Image 24" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (25).jpg" alt="Image 25" onclick="openFullscreen(this)" />
+                    <img src="../img2/slider_images/img (26).jpg" alt="Image 26" onclick="openFullscreen(this)" />
+                </div>
+
+                <!-- Right Arrow -->
+                <button class="scroll-arrow right" onclick="scrollImages('right')">
+                    &#10095;
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal for Fullscreen Image -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage" />
+        </div>
+
+        <style>
+            .image-scroll-wrapper {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                background: #f8f8f8;
+                padding: 20px 0;
+            }
+
+            .scroll-images {
+                display: flex;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+                padding: 10px;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+            .scroll-images::-webkit-scrollbar {
+                display: none;
+            }
+
+            .scroll-images img {
+                width: 200px;
+                max-width: 90vw;
+                margin: 0 10px;
+                border-radius: 10px;
+                flex-shrink: 0;
+                cursor: pointer;
+                transition: transform 0.3s;
+            }
+
+            .scroll-images img:hover {
+                transform: scale(1.05);
+            }
+
+            .scroll-arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 10;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                border: none;
+                font-size: 30px;
+                padding: 10px 15px;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+
+            .scroll-arrow.left {
+                left: 20px;
+            }
+
+            .scroll-arrow.right {
+                right: 20px;
+            }
+
+            .scroll-arrow:hover {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            /* Modal Styles */
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 9999;
+                padding-top: 60px;
+                left: 0;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+
+            .modal-content {
+                margin: auto;
+                display: block;
+                max-width: 90vw;
+                max-height: 90vh;
+                border-radius: 10px;
+            }
+
+            .close {
+                position: absolute;
+                top: 20px;
+                right: 40px;
+                color: #fff;
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 10000;
+            }
+
+            .close:hover {
+                color: #ccc;
+            }
+
+            @media screen and (max-width: 768px) {
+                .scroll-images img {
+                    width: 140px;
+                    margin: 0 5px;
+                }
+
+                .scroll-arrow {
+                    font-size: 24px;
+                    padding: 8px 12px;
+                }
+
+                .close {
+                    right: 20px;
+                    font-size: 32px;
+                }
+            }
+        </style>
+
+        <script>
+            function scrollImages(direction) {
+                const container = document.getElementById("scrollContainer");
+                const scrollAmount = 320; // Adjust as needed
+                container.scrollBy({
+                    left: direction === "left" ? -scrollAmount : scrollAmount,
+                    behavior: "smooth"
+                });
+            }
+
+            function openFullscreen(img) {
+                const modal = document.getElementById("imageModal");
+                const modalImg = document.getElementById("modalImage");
+                modal.style.display = "block";
+                modalImg.src = img.src;
+            }
+
+            function closeModal() {
+                document.getElementById("imageModal").style.display = "none";
+            }
+
+            // Optional: close modal on clicking outside image
+            window.onclick = function (event) {
+                const modal = document.getElementById("imageModal");
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+
+        <!-- updated site works ends here  -->
+
 
 
 
