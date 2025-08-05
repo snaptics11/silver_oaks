@@ -782,32 +782,33 @@
 
                 <!-- Scrollable Image Container -->
                 <div class="scroll-images" id="scrollContainer">
-                    <img src="../img2/slider_images/img (1).jpg" alt="Image 1" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (2).jpg" alt="Image 2" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (3).jpg" alt="Image 3" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (4).jpg" alt="Image 4" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (5).jpg" alt="Image 5" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (6).jpg" alt="Image 6" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (7).jpg" alt="Image 7" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (8).jpg" alt="Image 8" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (9).jpg" alt="Image 9" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (10).jpg" alt="Image 10" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (11).jpg" alt="Image 11" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (12).jpg" alt="Image 12" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (13).jpg" alt="Image 13" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (14).jpg" alt="Image 14" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (15).jpg" alt="Image 15" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (16).jpg" alt="Image 16" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (17).jpg" alt="Image 17" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (18).jpg" alt="Image 18" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (19).jpg" alt="Image 19" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (20).jpg" alt="Image 20" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (21).jpg" alt="Image 21" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (22).jpg" alt="Image 22" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (23).jpg" alt="Image 23" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (24).jpg" alt="Image 24" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (25).jpg" alt="Image 25" onclick="openFullscreen(this)" />
-                    <img src="../img2/slider_images/img (26).jpg" alt="Image 26" onclick="openFullscreen(this)" />
+                    <!-- Replace these image paths with your actual images -->
+                    <img src="../img2/slider_images/img (1).jpg" alt="Image 1" />
+                    <img src="../img2/slider_images/img (2).jpg" alt="Image 2" />
+                    <img src="../img2/slider_images/img (3).jpg" alt="Image 3" />
+                    <img src="../img2/slider_images/img (4).jpg" alt="Image 4" />
+                    <img src="../img2/slider_images/img (5).jpg" alt="Image 5" />
+                    <img src="../img2/slider_images/img (6).jpg" alt="Image 6" />
+                    <img src="../img2/slider_images/img (7).jpg" alt="Image 7" />
+                    <img src="../img2/slider_images/img (8).jpg" alt="Image 8" />
+                    <img src="../img2/slider_images/img (9).jpg" alt="Image 9" />
+                    <img src="../img2/slider_images/img (10).jpg" alt="Image 10" />
+                    <img src="../img2/slider_images/img (11).jpg" alt="Image 11" />
+                    <img src="../img2/slider_images/img (12).jpg" alt="Image 12" />
+                    <img src="../img2/slider_images/img (13).jpg" alt="Image 13" />
+                    <img src="../img2/slider_images/img (14).jpg" alt="Image 14" />
+                    <img src="../img2/slider_images/img (15).jpg" alt="Image 15" />
+                    <img src="../img2/slider_images/img (16).jpg" alt="Image 16" />
+                    <img src="../img2/slider_images/img (17).jpg" alt="Image 17" />
+                    <img src="../img2/slider_images/img (18).jpg" alt="Image 18" />
+                    <img src="../img2/slider_images/img (19).jpg" alt="Image 19" />
+                    <img src="../img2/slider_images/img (20).jpg" alt="Image 20" />
+                    <img src="../img2/slider_images/img (21).jpg" alt="Image 21" />
+                    <img src="../img2/slider_images/img (22).jpg" alt="Image 22" />
+                    <img src="../img2/slider_images/img (23).jpg" alt="Image 23" />
+                    <img src="../img2/slider_images/img (24).jpg" alt="Image 24" />
+                    <img src="../img2/slider_images/img (25).jpg" alt="Image 25" />
+                    <img src="../img2/slider_images/img (26).jpg" alt="Image 26" />
                 </div>
 
                 <!-- Right Arrow -->
@@ -815,12 +816,12 @@
                     &#10095;
                 </button>
             </div>
-        </div>
 
-        <!-- Modal for Fullscreen Image -->
-        <div id="imageModal" class="modal">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img class="modal-content" id="modalImage" />
+            <!-- Fullscreen Modal -->
+            <div class="image-modal" id="imageModal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage" />
+            </div>
         </div>
 
         <style>
@@ -838,25 +839,26 @@
                 scroll-behavior: smooth;
                 padding: 10px;
                 -ms-overflow-style: none;
+                /* IE/Edge */
                 scrollbar-width: none;
+                /* Firefox */
             }
 
             .scroll-images::-webkit-scrollbar {
                 display: none;
+                /* Chrome, Safari */
             }
 
             .scroll-images img {
-                width: 200px;
-                max-width: 90vw;
+                width: 100%;
+                max-width: 250px;
+                height: 250px;
                 margin: 0 10px;
                 border-radius: 10px;
                 flex-shrink: 0;
                 cursor: pointer;
-                transition: transform 0.3s;
-            }
-
-            .scroll-images img:hover {
-                transform: scale(1.05);
+                transition: transform 0.3s ease;
+                object-fit: cover;
             }
 
             .scroll-arrow {
@@ -885,16 +887,16 @@
                 background-color: rgba(0, 0, 0, 0.7);
             }
 
-            /* Modal Styles */
-            .modal {
+            /* Modal styles */
+            .image-modal {
                 display: none;
                 position: fixed;
-                z-index: 9999;
+                z-index: 999;
                 padding-top: 60px;
                 left: 0;
                 top: 0;
-                width: 100vw;
-                height: 100vh;
+                width: 100%;
+                height: 100%;
                 overflow: auto;
                 background-color: rgba(0, 0, 0, 0.9);
             }
@@ -903,39 +905,55 @@
                 margin: auto;
                 display: block;
                 max-width: 90vw;
-                max-height: 90vh;
+                max-height: 80vh;
                 border-radius: 10px;
             }
 
             .close {
                 position: absolute;
-                top: 20px;
+                top: 30px;
                 right: 40px;
-                color: #fff;
+                color: white;
                 font-size: 40px;
                 font-weight: bold;
                 cursor: pointer;
-                z-index: 10000;
+                z-index: 1000;
             }
 
-            .close:hover {
-                color: #ccc;
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            /* Responsive tweaks */
+            @media screen and (max-width: 1024px) {
+                .scroll-images img {
+                    max-width: 220px;
+                }
             }
 
             @media screen and (max-width: 768px) {
                 .scroll-images img {
-                    width: 140px;
+                    max-width: 160px;
                     margin: 0 5px;
                 }
 
                 .scroll-arrow {
                     font-size: 24px;
-                    padding: 8px 12px;
+                    padding: 6px 10px;
                 }
 
                 .close {
-                    right: 20px;
                     font-size: 32px;
+                    right: 20px;
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                .scroll-images img {
+                    max-width: 250px;
                 }
             }
         </style>
@@ -943,30 +961,21 @@
         <script>
             function scrollImages(direction) {
                 const container = document.getElementById("scrollContainer");
-                const scrollAmount = 320; // Adjust as needed
-                container.scrollBy({
-                    left: direction === "left" ? -scrollAmount : scrollAmount,
-                    behavior: "smooth"
-                });
+                const scrollAmount = 300;
+                if (direction === "left") {
+                    container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+                } else {
+                    container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+                }
             }
 
-            function openFullscreen(img) {
-                const modal = document.getElementById("imageModal");
-                const modalImg = document.getElementById("modalImage");
-                modal.style.display = "block";
-                modalImg.src = img.src;
+            function openModal(src) {
+                document.getElementById("imageModal").style.display = "block";
+                document.getElementById("modalImage").src = src;
             }
 
             function closeModal() {
                 document.getElementById("imageModal").style.display = "none";
-            }
-
-            // Optional: close modal on clicking outside image
-            window.onclick = function (event) {
-                const modal = document.getElementById("imageModal");
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
             }
         </script>
 
