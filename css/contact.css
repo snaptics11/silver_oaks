@@ -1,0 +1,112 @@
+.contact-hero .box1{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-hero .box1{
+    height: 400px;
+   }
+
+.contact-hero .box1 img{
+width: 40% !important;
+}
+.box1-img1{
+    width: 50%;
+}
+.contact-hero .about-h1{
+    width: 50%;
+}
+.contact-hero .about-h1 h1{
+   display: inline-block;
+}
+.contact-hero .about-h1 span{
+    width: 100%;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #8d8a8a;
+}
+.contact-hero .about-h1{
+    right: 0% !important;
+    position: static;
+    top: 32%;
+}
+@media(max-width:768px){
+    .contact-hero .box1{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+    .contact-hero .box1 img{
+        width:100% !important;
+        }
+        .contact-hero .about-h1{
+            width: 80%;
+        }
+}
+.contact-box5{
+    background-color: #f6f6f6;
+}
+.contact-box5 .about-box5-child1-text{
+    width: 50%;
+}
+.contact-box5 .about-box5-child1-text h1{
+    font-size: 22px;
+    margin: 16px 0px;
+}
+.contact-box5 .about-box5-child1-text p{
+    font-size: 16px;
+    line-height: 1.8em;
+    margin: 16px 0px 30px;
+    word-spacing: 0px;
+}
+.contact-box5 .about-box5-child1-text p i{
+    color: #548fc8;
+    margin-right: 10px;
+}
+.contact-box5 .about-box5-child1-img{
+    width: 50%;
+}
+.contact-box5 .about-box5-child1-img input{
+  
+    padding: 10px 20px;
+    
+}
+#name{
+    margin: 20px;
+    width:80%;
+}
+#email{
+   
+    width:40%;
+}
+#phone{
+    
+    width:40%;
+}
+#msg{
+    margin: 20px;
+    width:80%;
+    padding:10px  20px 0px;
+}
+#submit{
+    width: 80%;
+    background-color: #548fc8;
+    border: 1px solid #548fc8;
+    color: white;
+}
+@media(max-width:768px){
+    .contact-box5 .about-box5-child1-text{
+        width: 80%;
+    }
+    .contact-box5 .about-box5-child1-img{
+        width: 80%;
+    }
+    .contact-box5 .about-box5-child1{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
